@@ -40,6 +40,12 @@ body {
 .nav-bar .top-nav .user-nav > * {
   margin: 0 0.5rem;
 }
+.nav-bar .top-nav .tool-link {
+  cursor: pointer;
+}
+.nav-bar .top-nav .tool-link:hover {
+  color: #d4dee9ff;
+}
 .nav-bar .top-nav .search-box {
   margin-right: 1.5rem;
 }
@@ -105,6 +111,7 @@ body {
   display: flex;
   flex-direction: row;
   height: 100%;
+  margin-left: 3rem;
 }
 .nav-bar .bottom-nav .page-links .nav-pils {
   display: flex;
@@ -119,7 +126,7 @@ body {
   background-color: #67a9e3ff;
 }
 .nav-bar .bottom-nav .page-links .nav-pils.active {
-  background-color: #67a9e3ff;
+  background-color: #3372aa;
 }
 .nav-bar .nav-breadcrumbs {
   justify-content: flex-end;
@@ -134,9 +141,16 @@ body {
 .nav-bar .nav-breadcrumbs .bcrumb-container .bcrumb {
   color: #6a6f77ff;
   margin: 0 0.3rem;
+  cursor: pointer;
 }
 .nav-bar .nav-breadcrumbs .bcrumb-container .bcrumb.active {
   color: #4699e2;
+}
+.nav-bar .nav-breadcrumbs .bcrumb-container .bcrumb.active:hover {
+  color: #67a9e3ff;
+}
+.nav-bar .nav-breadcrumbs .bcrumb-container .bcrumb:hover {
+  color: #9faab5ff;
 }
 
 /*# sourceMappingURL=style.css.map */

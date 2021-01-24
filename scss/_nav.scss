@@ -32,6 +32,14 @@
             }
         }
 
+        .tool-link {
+            cursor: pointer;
+
+            &:hover {
+                color: $grey-lighter;
+            }
+        }
+
         .search-box {
             margin-right: 1.5rem;
 
@@ -112,6 +120,7 @@
             display: flex;
             flex-direction: row;
             height: 100%;
+            margin-left: 3rem;
 
             .nav-pils {
                 display: flex;
@@ -128,7 +137,7 @@
                 }
 
                 &.active {
-                    background-color: $primary-light;
+                    background-color: $primary-darkish;
                 }
             }
         }
@@ -146,9 +155,18 @@
             .bcrumb {
                 color: $grey-dark;
                 margin: 0 .3rem;
+                cursor: pointer;
 
                 &.active {
                     color: $primary;
+
+                    &:hover {
+                        color: $primary-light;
+                    }
+                }
+
+                &:hover {
+                    color: $grey;
                 }
             }
         }
