@@ -1,0 +1,115 @@
+@import 'variables';
+
+.sidebar {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 1rem;
+    width: 30%;
+
+    .sidebar-card {
+        display: flex;
+        flex-direction: column;
+
+        border: 1px solid $grey-lighter;
+
+        .sidebar-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: .5rem .75rem;
+            background-color: $primary-darker;
+            color: $grey-lightest;
+
+            .header-icon {
+                margin-right: .75rem;
+            }
+        }
+
+        .card-body {
+            padding: .5rem .75rem;
+            font-size: 90%;
+
+            .card-list {
+                display: grid;
+                grid-template-columns: auto;
+                border: 1px solid $grey-lighter;
+
+                .list-item {
+                    display: flex;
+                    flex-direction: row;
+                    border-bottom: 1px solid $grey-lighter;
+                    padding: .25rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $grey-lightest;
+                    }
+
+                    .item-img {
+                        width: 25%;
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    }
+
+                    .item-date,
+                    .item-initials {
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        text-align: center;
+                        color: #fff;
+                        border: 1px solid $grey-light;
+                        border-radius: 50%;
+                        font-size: 95%;
+                        font-weight: 700;
+                    }
+
+                    .item-initials {
+                        padding: 1rem;
+
+                        &.success {
+                            background-color: $success;
+
+                        }
+
+                        &.warning {
+                            background-color: rgb(49, 0, 128);
+
+                        }
+
+                        &.info {
+                            background-color: $info;
+
+                        }
+
+                        &.primary {
+                            background-color: rgb(187, 34, 248);
+                        }
+                    }
+
+                    .item-date {
+                        background-color: $primary-dark;
+                        padding: .5rem 1rem;
+                    }
+
+                    .item-body {
+                        display: flex;
+                        flex-direction: column;
+                        width: 75%;
+                        margin-left: .5rem;
+
+                        .item-title {
+                            font-size: 95%;
+                            font-weight: 700;
+                        }
+                        .item-info {
+                            color: $grey-dark;
+                            font-size: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
