@@ -1,15 +1,17 @@
 @import 'variables';
 
+.sidebar-container {
+    width: 30%;
+}
+
 .sidebar {
     display: grid;
     grid-template-columns: auto;
     grid-row-gap: 1rem;
-    width: 30%;
 
     .sidebar-card {
         display: flex;
         flex-direction: column;
-
         border: 1px solid $grey-lighter;
 
         .sidebar-header {
@@ -109,7 +111,15 @@
                         }
                     }
                 }
+
+                .list-item:last-of-type {
+                    border-bottom: none;
+                }
             }
         }
     }
+}
+
+.filler-box {
+    height: auto;
 }

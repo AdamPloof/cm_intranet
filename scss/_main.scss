@@ -20,12 +20,6 @@
             flex-direction: column;
             border-bottom: 1px solid $grey-light;
 
-            .card-image {
-                img {
-                    width: 100%;
-                }
-            }
-
             h2 {
                 margin: 0;
             }
@@ -54,6 +48,7 @@
         .card-body {
             margin-top: .6rem;
             font-size: 90%;
+            flex-grow: 1;
         }
 
         .card-footer {
@@ -95,6 +90,45 @@
                         
                     }
                 }
+            }
+        }
+    }
+
+    // TODO: clean up Featured vs Group article rules
+    .featured-article .article-card {
+        // Featured Article Images
+        .card-image {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .article-group {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 1rem;
+    }
+
+    .article-group .article-card {
+        margin-bottom: 0;
+
+        .card-top {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .card-header {
+            width: 100%;
+        }
+
+        // Images in article group
+        .card-image {
+            img {
+                width: 80px;
+                height: 80px;
+                object-fit: cover;
+                margin-right: 1rem;
             }
         }
     }
